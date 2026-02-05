@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="dropdown.css" />
+    <!-- <style>
+      ul {
+        list-style: none;
+        width: 50%;
+      }
+
+      ul li {
+        display: inline-block;
+        padding: 15px;
+        width: 170px;
+        background-color: orangered;
+        margin: -5px;
+        text-align: center;
+      }
+
+      ul li:hover {
+        background-color: red;
+        transition: 0.7s all;
+        cursor: pointer;
+      }
+
+      ul li a {
+        text-decoration: none;
+        font-family: sans-serif;
+        color: #fff;
+      }
+
+      .dropdown-content {
+        position: absolute;
+        z-index: 1;
+        width: 130px;
+        margin-top: 17px;
+        margin-left: -55px;
+        display: none;
+      }
+
+      .work_item:hover .dropdown-content {
+        display: block;
+      }
+      .dropdown-content ul li {
+        border: 1px solid rgb(192, 182, 182);
+        text-align: left;
+      }
+    </style> -->
+  </head>
+  <body>
+    <!-- <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li class="work_item">
+          <a href="#">Work</a>
+          <div class="dropdown-content">
+            <ul>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Typografy</a></li>
+              <li><a href="#">Frontend</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav> -->
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">WordPress</a></li>
+        <li class="web_item">
+          <a href="#">Web Design</a>
+          <div class="dropdown-web">
+            <ul>
+              <li><a href="#">Resources</a></li>
+              <li><a href="#">Links</a></li>
+              <li class="tutorials_item">
+                <a href="#">Tutorials</a>
+                <div class="dropdown-tutorials">
+                  <ul>
+                    <li><a href="#">HTML/CSS</a></li>
+                    <li><a href="#">jQuery</a></li>
+                    <li class="other_item">
+                      <a href="#">Other</a>
+                      <div class="dropdown-other">
+                        <ul>
+                          <li><a href="#">Stuff</a></li>
+                          <li><a href="#">Things</a></li>
+                          <li><a href="#">Other Stuff</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">Graphic Design</a></li>
+        <li><a href="#">Inspiration</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
