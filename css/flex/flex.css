@@ -1,21 +1,21 @@
 .flex_container {
   display: flex;
-  width: 100%;
-  justify-content: center;
+
   gap: 2rem;
-  align-items: center;
+  align-items: stretch;
 }
 .flex_item {
   border: 1px solid none;
   border-radius: 10px;
   overflow: hidden;
-  width: 400px;
-  height: 500px;
+  max-width: 450px;
+  width: 100%;
   box-shadow: 0 0 10px rgb(212, 208, 208);
   padding-bottom: 1rem;
 }
 img {
   width: 100%;
+  object-fit: cover;
   height: 300px;
 }
 .paragraf1,
@@ -23,6 +23,7 @@ img {
 .twitter {
   padding: 0 1rem;
 }
+
 hr {
   margin: 1rem 1rem;
   color: rgb(212, 208, 208);
