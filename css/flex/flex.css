@@ -1,13 +1,14 @@
 .flex_container {
   display: flex;
-
   gap: 2rem;
-  align-items: stretch;
 }
 .flex_item {
   border: 1px solid none;
   border-radius: 10px;
-  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
   max-width: 450px;
   width: 100%;
   box-shadow: 0 0 10px rgb(212, 208, 208);
@@ -15,18 +16,16 @@
 }
 img {
   width: 100%;
-  object-fit: cover;
-  height: 300px;
 }
 .paragraf1,
 .text1,
 .twitter {
-  padding: 0 1rem;
+  padding-left: 1rem;
 }
 
-hr {
-  margin: 1rem 1rem;
-  color: rgb(212, 208, 208);
+.divider {
+  margin-top: auto;
+  color: rgb(214, 50, 50);
 }
 .twitter {
   text-decoration: none;
