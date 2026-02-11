@@ -5,23 +5,22 @@
 
 .flex_container {
   display: flex;
-  width: 100%;
   justify-content: center;
   gap: 1rem;
   align-items: center;
+  padding-top: 2rem;
 }
 .flex_item {
   text-align: center;
-
   border-radius: 10px;
   background-color: rgb(211, 180, 175);
   padding: 1rem;
 }
 body {
-  /* background-image: url("../img/imgflower.jpg") no-repeat center center/cover; */
-  /* background-repeat: no-repeat;
+  background-image: url(./img/imgflower.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  background-position: center; */
 }
 .flex_item ul {
   display: flex;
@@ -31,15 +30,15 @@ body {
   align-items: center;
 }
 
-.flex_item ul li a {
+.flex_item ul.social_media li a {
   color: #fff;
-  font-size: 1.5rem;
   transition: 0.5s;
 }
-ul li a i {
-  font-size: 50px;
+.social_media li a i {
+  font-size: 2.5rem;
 }
-.flex_item ul li a:hover {
+
+.flex_item ul.social_media li a:hover {
   color: rgb(109, 105, 105);
 }
 .flex_item img {
