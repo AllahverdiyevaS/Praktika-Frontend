@@ -11,25 +11,38 @@ header {
 }
 .nav_container ul li a {
   text-decoration: none;
-
+  color: black;
+  font-size: medium;
+  font-family: sans-serif;
   font-weight: 500;
 }
-.page_container {
+.nav_container ul li a:hover {
+  color: rgb(15, 15, 243);
+}
+.dropdown_container {
   display: none;
   z-index: 1;
   margin-top: 5px;
   margin-left: -20px;
   position: absolute;
 }
-.page_container ul {
+.dropdown_container ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   border: 1px solid rgb(192, 182, 182);
   padding: 0.5rem;
 }
-.nav_container ul li:hover .page_container {
+button:hover + .dropdown_container {
   display: block;
+}
+.page {
+  display: flex;
+  gap: 2px;
+}
+button {
+  border: none;
+  background-color: transparent;
 }
 .main_img_container {
   position: relative;

@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
   </head>
   <body>
     <header>
@@ -12,16 +16,19 @@
       <nav class="nav_container">
         <ul>
           <li><a href="#">Home</a></li>
-          <li>
+          <li class="page">
             <a href="#">Page</a>
-            <div class="page_container">
-              <ul>
-                <li><a href="">About us</a></li>
-                <li><a href="">Our Team</a></li>
-                <li><a href="">FAQ</a></li>
-                <li><a href="">Pricing</a></li>
-                <li><a href="">Services</a></li>
-              </ul>
+            <div class="dropdown">
+              <button><i class="fa-solid fa-caret-down"></i></button>
+              <div class="dropdown_container">
+                <ul>
+                  <li><a href="">About us</a></li>
+                  <li><a href="">Our Team</a></li>
+                  <li><a href="">FAQ</a></li>
+                  <li><a href="">Pricing</a></li>
+                  <li><a href="">Services</a></li>
+                </ul>
+              </div>
             </div>
           </li>
 
