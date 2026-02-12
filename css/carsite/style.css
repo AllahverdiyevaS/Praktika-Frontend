@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -81,4 +87,22 @@ main {
 }
 .grid_item img {
   width: 100%;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: royalblue;
+}
+.info_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 1.5rem;
+  padding: 2rem;
+}
+.footer_list ul li {
+  list-style: none;
+  padding-top: 10px;
 }
