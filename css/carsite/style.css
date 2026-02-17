@@ -27,8 +27,7 @@ header {
   text-decoration: none;
   color: black;
   font-size: medium;
-  font-family: sans-serif;
-  font-weight: 500;
+  font-family: inherit;
 }
 .nav_container ul li a:hover {
   color: rgb(15, 15, 243);
@@ -36,7 +35,7 @@ header {
 .dropdown_container {
   display: none;
   z-index: 1;
-  margin-top: 5px;
+  margin-top: 20px;
   margin-left: -20px;
   position: absolute;
 }
@@ -44,10 +43,11 @@ header {
   list-style: none;
   display: flex;
   flex-direction: column;
-  border: 1px solid rgb(192, 182, 182);
-  padding: 0.5rem;
+  gap: 1rem;
+  background-color: #fff;
+  padding: 1rem;
 }
-button:hover + .dropdown_container {
+.page:hover .dropdown_container {
   display: block;
 }
 .page {
@@ -79,6 +79,7 @@ main {
   z-index: 999;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 3.75rem;
   font-weight: 700;
   color: #fff;
@@ -88,6 +89,14 @@ main {
   display: flex;
   justify-content: space-between;
   padding: 2rem;
+}
+.text_container h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.text_container p {
+  font-size: 1rem;
+  line-height: 1.8;
 }
 .grid_container {
   display: grid;
@@ -115,5 +124,51 @@ footer {
 }
 .footer_list ul li {
   list-style: none;
-  padding-top: 10px;
+  padding-top: 20px;
+}
+.footer_list h4,
+.left_logo_container h4 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.footer_list ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.left_logo_container img {
+  width: 125px;
+  height: 80px;
+  margin-bottom: 1.5rem;
+}
+.left_logo_container p {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-top: 1.5rem;
+}
+footer hr {
+  margin: 0 2rem;
+}
+.footer_text {
+  color: #fff;
+  text-align: center;
+  font-size: 0.875rem;
+  margin-bottom: 50px;
+}
+.social_media {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.social_media a {
+  color: #fff;
+  font-family: inherit;
+  font-size: inherit;
 }
