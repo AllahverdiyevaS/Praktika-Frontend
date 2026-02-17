@@ -172,3 +172,14 @@ footer hr {
   font-family: inherit;
   font-size: inherit;
 }
+.flex_container {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  justify-content: center;
+  margin: 2rem;
+}
+.flex_item {
+  padding: 3rem 4rem;
+  background-color: #2e61d4;
+}
