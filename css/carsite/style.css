@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 header {
@@ -9,7 +10,14 @@ header {
   justify-content: space-between;
   padding: 2rem;
 }
-
+.img_container {
+  width: 120px;
+  height: 70px;
+}
+.img_container img {
+  width: 100%;
+  height: 100%;
+}
 .nav_container ul {
   display: flex;
   gap: 2rem;
@@ -71,6 +79,9 @@ main {
   z-index: 999;
   top: 50%;
   left: 50%;
+  font-size: 3.75rem;
+  font-weight: 700;
+  color: #fff;
 }
 .text_container {
   width: 100%;
