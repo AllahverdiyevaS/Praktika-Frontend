@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #dfabc5 0%, #1da1f2 100%);
+}
+
+.container {
+  background-color: #fff;
+  max-width: 350px;
+  width: 100%;
+  padding: 25px 30px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.container form .logo {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.container form .logo::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 33px;
+  bottom: 2px;
+  left: 0;
+  background-color: #1da1f2;
+  border-radius: 5px;
+}
+
+.container form .input_box {
+  width: 100%;
+  height: 45px;
+  margin-top: 25px;
+  position: relative;
+}
+
+.container form .input_box input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  font-size: 16px;
+}
+
+.container form .underline::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #ccc;
+  left: 0;
+  bottom: 0;
+}
+
+.container form .underline::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: green;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.4s all ease-in;
+}
+
+.container form .input_box input:focus ~ .underline::after,
+.container form .input_box input:valid ~ .underline::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.container form .input_box input[type="submit"] {
+  font-size: 17px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: green;
+  transition: 0.4s ease;
+}
+
+.container form .input_box input[type="submit"]:hover {
+  letter-spacing: 1px;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.container .txt {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.github a,
+.twitter a,
+.facebook a {
+  display: block;
+  width: 100%;
+  height: 45px;
+  font-size: 1rem;
+  text-decoration: none;
+  padding-left: 1rem;
+  color: #fff;
+  line-height: 45px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.github a {
+  background-color: #24292e;
+}
+
+.github a:hover {
+  background-color: #6d7e8f;
+}
+
+.twitter a {
+  background-color: #1da1f2;
+}
+
+.twitter a:hover {
+  background-color: #aabbbe;
+}
+
+.facebook a {
+  background-color: #4267b2;
+}
+
+.facebook a:hover {
+  background-color: #8797b6;
+}
+
+.container .github i,
+.container .twitter i,
+.container .facebook i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
