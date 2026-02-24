@@ -81,6 +81,8 @@ main {
   height: 100%;
 }
 .background_img ::before {
+  top: 0;
+  left: 0;
   content: "";
   position: absolute;
   background-color: black;
@@ -281,4 +283,83 @@ form input[type="submit"] {
 }
 .map {
   width: 100%;
+}
+#menu_toggle {
+  display: none;
+}
+@media (max-width: 800px) {
+  .menu_btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    width: 35px;
+    height: 30px;
+    background-color: #2e61d4;
+  }
+  .menu_btn span,
+  .menu_btn::after,
+  .menu_btn::before {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #111111;
+  }
+  .menu_btn::before {
+    content: "";
+    top: 7px;
+  }
+  .menu_btn::after {
+    content: "";
+    bottom: 7px;
+  }
+  .nav_container ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    padding: 120px 0;
+    background-color: #111111;
+    width: 320px;
+    height: 100vh;
+    z-index: 999;
+  }
+  .nav_container ul li a {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .menu_close {
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    width: 41px;
+    cursor: pointer;
+  }
+  .menu_close::before,
+  .menu_close::after {
+    content: "";
+    position: absolute;
+    left: 7px;
+    right: 7px;
+    top: 36px;
+    height: 2px;
+    background: #fff;
+  }
+  .menu_close::before {
+    transform: rotate(45deg);
+  }
+  .menu_close::after {
+    transform: rotate(-45deg);
+  }
+
+  #menu_toggle:checked ~ ul {
+    left: 0;
+    transition: 0.5s;
+    box-shadow: 0 0 0 600vmax rgba(0, 0, 0, 0.3);
+  }
 }
