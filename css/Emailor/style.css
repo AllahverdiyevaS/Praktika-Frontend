@@ -143,4 +143,7 @@ footer a:hover {
   .header_with_img {
     flex-direction: column;
   }
+  .grid_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
