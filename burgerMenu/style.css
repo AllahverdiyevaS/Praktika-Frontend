@@ -70,13 +70,14 @@ body {
     height: 100vh;
     flex-direction: column;
     text-align: center;
-    gap: 2px;
+    gap: 1.5rem;
     transition: 0.7s;
     background-color: black;
   }
   .logo,
   .menu {
-    line-height: auto;
+    line-height: normal;
+    padding: 80px 0;
   }
   .hide-menu-btn {
     position: absolute;
