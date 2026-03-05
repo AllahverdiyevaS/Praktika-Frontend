@@ -303,7 +303,7 @@ nav {
   font-size: 1.3rem;
 }
 .section_for_subscription {
-  background-color: red;
+  background-color: #c71422;
   text-align: center;
   padding-top: 2rem;
 }
@@ -320,4 +320,68 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.section_for_subscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section_for_subscription h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.section_for_subscription h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: 400;
+  padding-top: 2rem;
+}
+.section_for_subscription p {
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 300;
+  padding-top: 1.5rem;
+  line-height: 24px;
+  margin: 1.5rem;
+}
+.icon {
+  color: #666666;
+  font-size: 14px;
+  width: 70%;
+  line-height: 1.80857;
+  font-weight: normal;
+  padding-bottom: 3rem;
+}
+.section_for_subscription h2 {
+  font-family: Poppins;
+  line-height: normal;
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 1.8rem;
+}
+.email_sumbit input[type="email"] {
+  padding: 1rem 1.25rem;
+  width: 600px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+.email_sumbit input[type="submit"] {
+  background-color: #e38f04;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+.section_for_subscription p a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
 }
