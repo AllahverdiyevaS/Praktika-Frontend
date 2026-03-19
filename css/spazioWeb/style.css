@@ -30,8 +30,71 @@ header nav ul li a {
 header nav ul li a:hover {
   color: #0dc0c0;
 }
-.main-section h1 {
-  font-size: 3rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url(https://cdn.prod.website-files.com/596d1737592fec0e946827d4/596d1737592fec0e9468283c_back2.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  gap: 2rem;
+  padding: 0 4rem;
+}
+.text {
+  width: 45%;
+}
+.text h1 {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 44px;
+}
+.text p {
+  color: #ffffffad;
+  margin-bottom: 20px;
+}
+.text button {
+  color: #fff;
+  text-align: center;
+  background-color: #0dc0c0;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 14px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.text button:hover {
+  background-color: #333;
+}
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 4rem;
+}
+.container_item {
+  display: flex;
+
+  gap: 2rem;
+}
+.container_item button {
+  display: block;
+  border: none;
+  width: 100px;
+
+  border-radius: 50%;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.container_item button img {
+  display: block;
+  width: 20px;
+
+  object-fit: contain;
 }
