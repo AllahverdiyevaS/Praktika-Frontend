@@ -39,17 +39,19 @@
 // }
 // console.log(summe);
 
-let i = 1;
-while (i <= 100) {
-  console.log(i);
+// let i = 1;
+// while (i <= 100) {
+//   console.log(i);
 
-  if (i % 3 == 0) {
-    continue;
-  }
-  if (i == 50) {
-    break;
-  }
-}
+//   if (i % 3 == 0) {
+//     i++;
+//     continue;
+//   }
+//   if (i == 50) {
+//     break;
+//   }
+//   i++;
+// }
 // let num = Number(prompt("eded daxil edin:"));
 // let sum = 0;
 // while (num !== 0) {
@@ -107,3 +109,20 @@ while (i <= 100) {
 //   cemi+= i;
 // }
 // console.log(sum);
+
+let number = Number(prompt("Bir rəqəm daxil edin "));
+let result = true;
+
+for (let i = 2; i < Math.floor(number / 2); i++) {
+  if (number % i == 0) {
+    result = false;
+    i++;
+    break;
+  }
+}
+
+if (result) {
+  alert(number + " Prime əddədir ");
+} else {
+  alert(number + " Prime Deyil");
+}
