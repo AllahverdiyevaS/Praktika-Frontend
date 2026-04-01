@@ -126,3 +126,78 @@ if (result) {
 } else {
   alert(number + " Prime Deyil");
 }
+
+// 01.04.2026
+
+// function sum(a, b) {
+//   return a + b;
+// }
+// const cemi = sum(5, 7);
+// console.log(cemi);
+
+// const inputAge = Number(prompt("yasinizi daxil edin"));
+// function checkAge(age) {
+//   if (age >= 18) {
+//     console.log("adults");
+//   } else {
+//     console.log("child");
+//   }
+// }
+// console.log(checkAge(inputAge));
+
+// function isEven(num) {
+//   if (num % 2 == 0) {
+//     console.log("regem cutdur");
+//   } else {
+//     console.log("regem tekdir");
+//   }
+// }
+// console.log(isEven(7));
+
+// ?????
+// function findNumber(arr, num) {
+//   for (let index = 0; index < arr.length; index++) {
+//     const element = arr[index];
+//     if (element === num) {
+//       console.log("Found");
+//     }
+//   }
+//   console.log("NotFound");
+// }
+// console.log(findNumber([1, 5, 7], 7));
+
+// function getDay(day) {
+//   if (day === 1) {
+//     return "Monday";
+//   } else if (day === 2) {
+//     return "Tuesday";
+//   } else if (day === 3) {
+//     return "Wednesday";
+//   } else {
+//     return "Invalid";
+//   }
+// }
+// console.log(getDay(3));
+
+// function multiply(num1, num2) {
+//   const result = num1 * num2;
+//   return result;
+// }
+// console.log(multiply(5, 7));
+
+// function getFullName(name, surname) {
+//   const fullName = name + " " + surname;
+//   return fullName;
+// }
+// console.log(getFullName("Shafayat", "Allahverdiyeva"));
+
+// function isPositive(eded) {
+//   if (eded === 0) {
+//     return "eded 0";
+//   } else if (eded > 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(isPositive(-7));

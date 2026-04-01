@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  background: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem 4rem;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  gap: 3rem;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navigation ul li a {
+  display: block;
+  color: #585978;
+  font-size: 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease-out 0s;
+  cursor: pointer;
+  padding: 10px 0;
+}
+.navigation ul li a:hover {
+  text-decoration: overline;
+  text-decoration-color: #2f80ed;
+
+  color: #2f80ed;
+}
+
+.start {
+  border: none;
+  background-color: #2f80ed;
+  align-items: center;
+  background: #2f80ed;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0 25px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.burger {
+  display: none;
+}
+
+.burger_checkbox {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .burger {
+    display: flex;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    width: 30px;
+    height: 17px;
+  }
+  .burger span {
+    height: 2px;
+    width: 100%;
+    transform: scale(1);
+    background-color: #000;
+  }
+  .burger::before,
+  .burger::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+    transition: all 0.3s ease 0s;
+  }
+  .burger::after {
+    bottom: 0;
+  }
+  .burger::before {
+    top: 0;
+  }
+
+  .burger_checkbox:checked ~ .burger span {
+    transform: scale(0);
+  }
+
+  .burger_checkbox:checked ~ .burger::before {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+
+  .burger_checkbox:checked ~ .burger::after {
+    bottom: 50%;
+    transform: rotate(-45deg);
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    top: 0;
+    right: 5%;
+    width: 90%;
+    flex-direction: column;
+    display: none;
+
+    justify-content: center;
+    gap: 1rem;
+    background-color: #ffffff;
+    z-index: 9;
+    box-shadow: 0px 15px 20px 0px rgba(50, 52, 80, 0.1);
+    padding: 5px 12px;
+  }
+  .navigation ul li a:hover {
+    text-decoration: underline;
+  }
+  .burger_checkbox:checked ~ .menu {
+    display: flex;
+    top: 95%;
+  }
+
+  .start {
+    display: none;
+  }
+}
