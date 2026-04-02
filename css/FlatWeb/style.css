@@ -233,6 +233,23 @@ header nav ul {
   border: none;
   border-radius: 3px;
 }
+.pricing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.pricing_items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 2rem 4rem;
+  width: 100%;
+}
+.pricing_item {
+}
 @media (max-width: 900px) {
   .burger {
     display: flex;
