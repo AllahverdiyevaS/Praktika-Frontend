@@ -84,11 +84,13 @@ header nav ul {
   color: #2f80ed;
   font-size: 1.7rem;
 }
-.text_for_home p {
+.text_for_home p,
+.text_for_about p {
   font-size: 1.2rem;
   color: #585978;
 }
-.text_for_home h1 {
+.text_for_home h1,
+.text_for_about h1 {
   font-weight: 700;
   color: #323450;
   font-size: 3rem;
@@ -182,6 +184,11 @@ header nav ul {
   padding: 7rem 0;
   background-color: #f3f3f3;
 }
+.text_for_about {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 .img_for_about {
   padding-left: 4rem;
 }
@@ -200,8 +207,31 @@ header nav ul {
   border-radius: 5px;
 }
 .info_about div {
-  border-right: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.info_about div:not(:last-child) {
+  border-right: 2px solid #585978;
   padding: 10px;
+}
+.info_about div p {
+  color: #585978;
+}
+.text_for_about button {
+  width: 20%;
+  height: 54px;
+  font-size: 18px;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  background: #2f80ed;
+  color: #ffffff;
+  padding: 0 25px;
+  border: none;
+  border-radius: 3px;
 }
 @media (max-width: 900px) {
   .burger {
