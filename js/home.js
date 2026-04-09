@@ -39,17 +39,7 @@
 // }
 // console.log(summe);
 
-let i = 1;
-while (i <= 100) {
-  console.log(i);
 
-  if (i % 3 == 0) {
-    continue;
-  }
-  if (i == 50) {
-    break;
-  }
-}
 // let num = Number(prompt("eded daxil edin:"));
 // let sum = 0;
 // while (num !== 0) {
@@ -107,3 +97,29 @@ while (i <= 100) {
 //   cemi+= i;
 // }
 // console.log(sum);
+let ball = Number(prompt("balinizi daxil edin"));
+function checkBall(ball) {
+  if (ball > 50) {
+    console.log("kecdiz");}
+else {
+    console.log("kesildiz");
+  } 
+}
+checkBall(ball);
+
+;
+function isPerfectNumber(num) {
+  let sum = 0;  
+  for (let i = 2; i < num/2; i++) {
+    if (num % i === 0) {
+      sum += i;
+    }
+    sum+=1+num;
+  }
+  if (sum=== num*2) {
+    console.log(num + " mukemmel bir sayidir.");
+  } else {
+    console.log(num + " mukemmel bir sayi degildir.");
+  }
+}
+console.log(isPerfectNumber(6));
