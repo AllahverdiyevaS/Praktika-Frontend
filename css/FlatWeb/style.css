@@ -29,11 +29,8 @@ header nav ul {
   display: flex;
   gap: 2rem;
 }
-.navigation ul li {
-  position: relative;
-}
-.navigation ul li a {
-  display: block;
+
+.menu li a {
   color: #585978;
   font-size: 1rem;
   font-weight: 500;
@@ -41,15 +38,29 @@ header nav ul {
   transition: all 0.3s ease-out 0s;
   cursor: pointer;
   padding: 10px 0;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
 }
-.navigation ul li a:hover .navigation ul li a::after {
-  position: absolute;
-  bottom: 0;
+.menu li a::after {
   content: "";
-  display: block;
-  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+
+  display: inline-block;
   height: 2px;
-  color: #2f80ed;
+  background-color: #2f80ed;
+  transition: width 0.3s ease;
+}
+
+.menu li a:hover::after {
+  width: 100%;
+}
+
+.menu li a.active::after {
+  width: 100%;
 }
 
 .start {
@@ -207,9 +218,9 @@ header nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  padding: 10px 0;
-  max-width: 450px;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  max-width: 500px;
   width: 100%;
   background-color: #eaeaea;
   border-radius: 5px;
@@ -220,13 +231,21 @@ header nav ul {
   align-items: center;
   justify-content: center;
   gap: 5px;
+  position: relative;
+  padding-right: 2rem;
 }
-.info_about div:not(:last-child) {
-  border-right: 2px solid #585978;
-  padding: 10px;
+.info_about div:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: rgb(88, 89, 120);
 }
 .info_about div p {
   color: #585978;
+  white-space: nowrap;
 }
 .text_for_about button {
   width: 20%;
@@ -284,6 +303,9 @@ header nav ul {
 .pricing_item:hover {
   border-color: #2f80ed;
 }
+.popular_active {
+  border-color: #2f80ed;
+}
 .avatar {
   width: 120px;
   height: 120px;
@@ -339,6 +361,69 @@ header nav ul {
   margin-right: 7px;
   font-family: "Font Awesome 5 Free";
   color: #2f80ed;
+}
+.form_with_info,
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.form div {
+  display: flex;
+  flex-direction: column;
+}
+.icon {
+  position: relative;
+}
+
+.icon input,
+textarea {
+  width: 100%;
+  outline: none;
+  padding-left: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid rgb(88, 89, 120);
+  padding: 10px;
+}
+.icon input {
+  height: 56px;
+}
+.icon input:focus,
+textarea:focus {
+  border-color: #2f80ed;
+}
+
+.icon i {
+  position: absolute;
+  right: 1.5rem;
+  top: 35%;
+  color: rgb(88, 89, 120);
+}
+.form div label {
+  color: rgb(88, 89, 120);
+  margin-bottom: 10px;
+}
+.message {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+form div button {
+  font-size: 18px;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  background: rgb(47, 128, 237);
+  padding: 0px 25px;
+  border: none;
+  border-radius: 10px;
+  height: 56px;
+  margin-top: 2rem;
+}
+form div button span {
+  padding-left: 1rem;
+  align-items: center;
 }
 @media (max-width: 900px) {
   .burger {
@@ -412,11 +497,31 @@ header nav ul {
     display: none;
   }
   .home,
-  .grid_container {
+  .grid_container,
+  .about {
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
   }
   .services_img img {
     width: 80%;
+  }
+
+  .pricing_items {
+    flex-direction: column;
+  }
+  .pricing_item {
+    width: 65%;
+  }
+  .pricing h1,
+  .pricing p {
+    width: 65%;
+  }
+  .about {
+    padding: 4rem;
+  }
+  .info_about {
+    max-width: 600px;
+    gap: 3rem;
+    padding: 1.5rem 0;
   }
 }
