@@ -262,11 +262,63 @@
 // }
 // console.log(isArmstrongNumber(153));
 
-function factorial(n) {
-  if (n === 0 || n === 1) {
-    return 1;
-  } else {
-    return n * factorial(n - 1);
-  }
-}
-console.log(factorial(4));
+// function factorial(n) {
+//   if (n === 0 || n === 1) {
+//     return 1;
+//   } else {
+//     return n * factorial(n - 1);
+//   }
+// }
+// console.log(factorial(4));
+
+// 16.04.2026-----------------------------
+let soz = "Ev tapshirigi 16.04.2026";
+
+// const result = soz.toUpperCase();
+// console.log(result);
+// console.log(soz.toUpperCase().length);
+
+// ---------------------
+// console.log(soz.slice(1, -1));
+
+// ---------------------
+// let eded = 7.51;
+// console.log(Math.pow(Math.round(eded), 2));
+// ---------------------
+// let eded = -17;
+// if (eded < 0) {
+//   console.log(Math.abs(eded));
+// } else {
+//   console.log(Math.sqrt(eded));
+// }
+// ---------------------
+// const reversed = soz.split("").reverse().join("");
+// console.log(reversed);
+// ---------------------
+
+// let count = soz.split("a").length - 1;
+// console.log(count);
+// ---------------------
+
+// const max = 10;
+// const min = 7;
+// const random = Math.floor(Math.random() * (max - min + 1)) + min;
+// console.log(random);
+// ---------------------
+
+// console.log(soz.trim());
+// ---------------------
+
+// function isPalidrome(string) {
+//   let reversed = string.split("").reverse().join("");
+//   return string === reversed;
+// }
+// console.log(isPalidrome("ana"));
+// ---------------------
+
+// let result = soz
+//   .split(" ")
+//   .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+//   .join(" ");
+// console.log(result);
+// ---------------------
