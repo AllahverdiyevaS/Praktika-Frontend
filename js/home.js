@@ -39,19 +39,7 @@
 // }
 // console.log(summe);
 
-// let i = 1;
-// while (i <= 100) {
-//   console.log(i);
 
-//   if (i % 3 == 0) {
-//     i++;
-//     continue;
-//   }
-//   if (i == 50) {
-//     break;
-//   }
-//   i++;
-// }
 // let num = Number(prompt("eded daxil edin:"));
 // let sum = 0;
 // while (num !== 0) {
@@ -109,216 +97,29 @@
 //   cemi+= i;
 // }
 // console.log(sum);
+let ball = Number(prompt("balinizi daxil edin"));
+function checkBall(ball) {
+  if (ball > 50) {
+    console.log("kecdiz");}
+else {
+    console.log("kesildiz");
+  } 
+}
+checkBall(ball);
 
-// let number = Number(prompt("Bir rəqəm daxil edin "));
-// let result = true;
-
-// for (let i = 2; i < Math.floor(number / 2); i++) {
-//   if (number % i == 0) {
-//     result = false;
-//     i++;
-//     break;
-//   }
-// }
-
-// if (result) {
-//   alert(number + " Prime əddədir ");
-// } else {
-//   alert(number + " Prime Deyil");
-// }
-
-// 01.04.2026
-
-// function sum(a, b) {
-//   return a + b;
-// }
-// const cemi = sum(5, 7);
-// console.log(cemi);
-
-// const inputAge = Number(prompt("yasinizi daxil edin"));
-// function checkAge(age) {
-//   if (age >= 18) {
-//     console.log("adults");
-//   } else {
-//     console.log("child");
-//   }
-// }
-// console.log(checkAge(inputAge));
-
-// function isEven(num) {
-//   if (num % 2 == 0) {
-//     console.log("regem cutdur");
-//   } else {
-//     console.log("regem tekdir");
-//   }
-// }
-// console.log(isEven(7));
-
-// function findNumber(arr, num) {
-//   for (let index = 0; index < arr.length; index++) {
-//     const element = arr[index];
-//     if (element === num) {
-//       console.log("Found");
-//     }
-//     return;
-//   }
-//   console.log("NotFound");
-// }
-// console.log(findNumber([1, 5, 7], 7));
-
-// function getDay(day) {
-//   if (day === 1) {
-//     return "Monday";
-//   } else if (day === 2) {
-//     return "Tuesday";
-//   } else if (day === 3) {
-//     return "Wednesday";
-//   } else {
-//     return "Invalid";
-//   }
-// }
-// console.log(getDay(3));
-
-// function multiply(num1, num2) {
-//   const result = num1 * num2;
-//   return result;
-// }
-// console.log(multiply(5, 7));
-
-// function getFullName(name, surname) {
-//   const fullName = name + " " + surname;
-//   return fullName;
-// }
-// console.log(getFullName("Shafayat", "Allahverdiyeva"));
-
-// function isPositive(eded) {
-//   if (eded === 0) {
-//     return "eded 0";
-//   } else if (eded > 0) {
-//     return true;
-//   } else {
-//     return false;
-//   }
-// }
-// console.log(isPositive(-7));
-
-// ----------------------------------------------
-// function isOddOrEven(num) {
-//   if (num % 2 === 0) {
-//     return "num ist even";
-//   } else {
-//     return "num is odd";
-//   }
-// }
-// console.log(isOddOrEven(7));
-
-// function decimalToBinary(number) {
-//   let bin = "";
-//   while (true) {
-//     bin += (number % 2).toString();
-//     number = Math.floor(number / 2);
-
-//     if (number == 1) {
-//       bin += 1;
-//       break;
-//     }
-//   }
-//   console.log(bin);
-// }
-// console.log(decimalToBinary(5));
-
-// function binaryToDecimal(number2) {
-//   return parseInt(number2, 2);
-// }
-// console.log(binaryToDecimal(101));
-
-// function isPerfectNumber(number3) {
-//   let sum = 0;
-//   for (let i = 2; i <= number3 / 2; i++) {
-//     if (number3 % i == 0) {
-//       sum += i;
-//     }
-//   }
-
-//   sum += 1 + number3;
-
-//   if (sum == number3 * 2) {
-//     console.log("perfect number");
-//   } else {
-//     console.log("not perfect number");
-//   }
-// }
-
-// console.log(isPerfectNumber(7));
-// ???????
-// function isArmstrongNumber(number4) {
-//   const stringNumber = number4.toString();
-//   let sum = 0;
-//   for (let index = 0; index < stringNumber.lengt; index++) {
-//     const element = parseInt(stringNumber[index]);
-//     sum += element ** stringNumber.length;
-//   }
-//   return sum === number4;
-// }
-// console.log(isArmstrongNumber(153));
-
-// function factorial(n) {
-//   if (n === 0 || n === 1) {
-//     return 1;
-//   } else {
-//     return n * factorial(n - 1);
-//   }
-// }
-// console.log(factorial(4));
-
-// 16.04.2026-----------------------------
-let soz = "Ev tapshirigi 16.04.2026";
-
-// const result = soz.toUpperCase();
-// console.log(result);
-// console.log(soz.toUpperCase().length);
-
-// ---------------------
-// console.log(soz.slice(1, -1));
-
-// ---------------------
-// let eded = 7.51;
-// console.log(Math.pow(Math.round(eded), 2));
-// ---------------------
-// let eded = -17;
-// if (eded < 0) {
-//   console.log(Math.abs(eded));
-// } else {
-//   console.log(Math.sqrt(eded));
-// }
-// ---------------------
-// const reversed = soz.split("").reverse().join("");
-// console.log(reversed);
-// ---------------------
-
-// let count = soz.split("a").length - 1;
-// console.log(count);
-// ---------------------
-
-// const max = 10;
-// const min = 7;
-// const random = Math.floor(Math.random() * (max - min + 1)) + min;
-// console.log(random);
-// ---------------------
-
-// console.log(soz.trim());
-// ---------------------
-
-// function isPalidrome(string) {
-//   let reversed = string.split("").reverse().join("");
-//   return string === reversed;
-// }
-// console.log(isPalidrome("ana"));
-// ---------------------
-
-// let result = soz
-//   .split(" ")
-//   .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-//   .join(" ");
-// console.log(result);
-// ---------------------
+;
+function isPerfectNumber(num) {
+  let sum = 0;  
+  for (let i = 2; i < num/2; i++) {
+    if (num % i === 0) {
+      sum += i;
+    }
+    sum+=1+num;
+  }
+  if (sum=== num*2) {
+    console.log(num + " mukemmel bir sayidir.");
+  } else {
+    console.log(num + " mukemmel bir sayi degildir.");
+  }
+}
+console.log(isPerfectNumber(6));

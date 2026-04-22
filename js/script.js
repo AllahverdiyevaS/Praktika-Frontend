@@ -16,124 +16,32 @@
 // functionForScope();
 // if (global) {
 //   const name = "This is global Scope";
-//   console.log(name);
+//   console.log(name)
 // }
+debugger
 
-const num1 = 7;
-const num2 = 5;
-const sum = num1 + num2;
-const difference = num1 - num2;
-const multiplizieren = num1 * num2;
-const dividieren = num1 / num2;
-const rest = num1 % num2;
-console.log(sum, difference, multiplizieren, dividieren, rest);
-const a = 1;
-const b = 4;
-if (a > 0 && b > 0) {
-  console.log(true);
-}
-if (a > 1 || b > 0) {
-  console.log(true);
-}
-if (a != b) {
-  console.log("a not = b");
-}
-const string = "7";
-const number = 7;
-isTrue = string === number;
-console.log(isTrue);
-isFalse = string == number;
-console.log(isFalse);
-const more = 9 > 7;
-const small = 5 < 7;
-console.log(more, small);
-let i = 7;
-
-console.log(i, (i += 1), (i -= 1), (i *= 2), (i /= 2));
-let akku = 20;
-if (akku <= 20) {
-    console.log("zaradka 20% asagidi");
-} else {
-    console.log("zaradka 20% ustundedi");
-}
-let mebleg = 200;
-if (mebleg >= 100) {
-    console.log("siz 10% ebdirim qazandiz");
-} else {
-    console.log("10% endirim qazanmaq ucun 100 manatliq alis veris edin");
-}
-let sifre = "12345";
-let daxilEdilenSifre = "12345";
-if (sifre === daxilEdilenSifre) {
-    console.log("sifre duzgundur");
-} else {
-    console.log("sifre duzgun deyil");
-}
-let havaDurumu = "yagislidi";
-if (havaDurumu === "yagislidi") {
-    console.log("yagisli hava ucun cetir goturun");
-} 
-else if (havaDurumu === "gunesli") {
-    console.log("gunesli hava ucun eynək goturun");
-}
-else {
-    console.log("evde qalin");
-}
-
-const myNumber=Number(prompt("bir eded daxil edin"));
-if(myNumber%2===0){
-    console.log("daxil edilen eded cutdur");
-}else{    console.log("daxil edilen eded tekdir");
-}
-const netice=71;
-if(netice>=90){
-    console.log("A");
-}
-else if(netice>=70 && netice<90){
-    console.log("B");
-}
-else if(netice>=50 && netice<70){
-    console.log("C");
-}
-else{
-    console.log("Fail");
-}
-const ageVisitor=25
-let bilet=true;
-if (ageVisitor>18 && bilet){
-    console.log("giris icazelidi");
-    if (!bilet) {console.log("biletiniz yoxdur");}
-      
-    }
-
-else{console.log("giris qadağandır");
-}
-const hefteGunleri=Number(prompt("hefte gunu daxil edin"));
-switch (hefteGunleri) {
-    case 1: console.log("Bazar ertesi");
-        break;
-        case 2: console.log("Cersenbe axsamı");
-        break;    
-        case 3: console.log("Cersenbe");
-        break;  
-        case 4: console.log("Cume axsamı");
-        break;
-        case 5: console.log("Cume");
-        break;
-        case 6: console.log("Senbe");
-        break;
-        case 7: console.log("Bazar");
-        break;
-    default: console.log("Duzgun daxil edin");
-        break;
-}
-const pasword="fzudwte65wd6743etz";
-if(pasword.length<=6){
-    console.log("Weak password");
-}
-else if(pasword.length>6 && pasword.length<=10){
-    console.log("Medium password");
-}
-else{
-    console.log("Strong password");
+// let amount=1000;
+// let newLine="\r\n";
+// let message="1-Mebleg goruntule: "+newLine+"2-Pul kocurmer: "+newLine+"3-Pul cekme: "+newLine+"4-Cixis";
+// let choose=prompt(message);
+// switch (choose) {
+//     case "1": alert(" mebleg: "+amount);
+//         break;
+//         case "2": let transferAmount=Number(prompt("Kocurmek istediyiniz meblegi daxil edin"));
+//    amount+=transferAmount;
+//    alert("Yeni mebleg: "+amount);
+//    break;
+//         case "3": let withdrawAmount=Number(prompt("Cekmek istediyiniz meblegi daxil edin"));
+//         amount-=withdrawAmount;
+//         alert("Qalan mebleg: "+amount);
+//         break;
+//     case "4": alert("Cixis edildi");
+//         break;
+//     default: alert("1 ile 4 arasi bir secim edin ");
+//         break;
+// }
+for (let i = 1; i <= 10; i++) {
+   for (let j = 1; j <= 10; j++) {
+       console.log(i+"x"+j+"="+(i*j) );
+   }
 }
