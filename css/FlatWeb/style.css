@@ -368,7 +368,9 @@ header nav ul {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
-
+.form_with_info {
+  margin: 4rem;
+}
 .form div {
   display: flex;
   flex-direction: column;
@@ -385,6 +387,7 @@ textarea {
   border-radius: 10px;
   border: 1px solid rgb(88, 89, 120);
   padding: 10px;
+  resize: none;
 }
 .icon input {
   height: 56px;
@@ -399,6 +402,10 @@ textarea:focus {
   right: 1.5rem;
   top: 35%;
   color: rgb(88, 89, 120);
+}
+
+.icon_for_textarea i {
+  top: 10%;
 }
 .form div label {
   color: rgb(88, 89, 120);
@@ -424,6 +431,33 @@ form div button {
 form div button span {
   padding-left: 1rem;
   align-items: center;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contacts h1 {
+  color: #323450;
+  font-weight: 700;
+  font-size: 40px;
+}
+.users_info {
+  display: flex;
+  align-items: center;
+}
+.users_info span {
+  margin-right: 2rem;
+  max-width: 54px;
+  width: 100%;
+  height: 54px;
+  border-radius: 50%;
+  background: #2f80ed;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
 }
 @media (max-width: 900px) {
   .burger {
