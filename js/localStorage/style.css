@@ -1,0 +1,14 @@
+/* body {
+  background-color: white;
+  color: black;
+}
+body.dark {
+  background-color: black;
+  color: white;
+} */
+body.green {
+  background-color: green;
+}
+body.blue {
+  background-color: blue;
+}
