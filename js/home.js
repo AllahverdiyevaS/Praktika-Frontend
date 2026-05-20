@@ -39,7 +39,6 @@
 // }
 // console.log(summe);
 
-
 // let num = Number(prompt("eded daxil edin:"));
 // let sum = 0;
 // while (num !== 0) {
@@ -97,29 +96,131 @@
 //   cemi+= i;
 // }
 // console.log(sum);
-let ball = Number(prompt("balinizi daxil edin"));
-function checkBall(ball) {
-  if (ball > 50) {
-    console.log("kecdiz");}
-else {
-    console.log("kesildiz");
-  } 
-}
-checkBall(ball);
+// let ball = Number(prompt("balinizi daxil edin"));
+// function checkBall(ball) {
+//   if (ball > 50) {
+//     console.log("kecdiz");}
+// else {
+//     console.log("kesildiz");
+//   }
+// }
+// checkBall(ball);
 
-;
-function isPerfectNumber(num) {
-  let sum = 0;  
-  for (let i = 2; i < num/2; i++) {
-    if (num % i === 0) {
-      sum += i;
-    }
-    sum+=1+num;
-  }
-  if (sum=== num*2) {
-    console.log(num + " mukemmel bir sayidir.");
-  } else {
-    console.log(num + " mukemmel bir sayi degildir.");
+// ;
+// function isPerfectNumber(num) {
+//   let sum = 0;
+//   for (let i = 2; i < num/2; i++) {
+//     if (num % i === 0) {
+//       sum += i;
+//     }
+//     sum+=1+num;
+//   }
+//   if (sum=== num*2) {
+//     console.log(num + " mukemmel bir sayidir.");
+//   } else {
+//     console.log(num + " mukemmel bir sayi degildir.");
+//   }
+// }
+// console.log(isPerfectNumber(6));
+
+// ----------------------------
+
+const age = 25;
+function checkVariable() {
+  const name = "Ali";
+}
+
+console.log(name);
+console.log(age);
+isHealthy = true;
+// if (age > 18) {
+//   let isConditionTrue = true;
+// }
+// console.log(isConditionTrue);
+
+if (age > 18) {
+  var isConditionTrue = true;
+}
+console.log(isConditionTrue);
+
+// let gun = "Bazar ertesi";
+// switch (gun) {
+//   case "Bazar ertesi":
+//     console.log("bugun bazra ertesi");
+//     break;
+//   case "Çərşənbə":
+//     console.log("bugun çərşənbə");
+//     break;
+//   case "Cumə":
+//     console.log("bugun cumə");
+//     break;
+//   default:
+//     console.log("bu gun bazar ertesi, çərşənbə ve ya cumə deyil");
+// }
+// let daxiEdilenGun = Number(prompt("gun daxil edin "));
+// switch (daxiEdilenGun) {
+//   case 1:
+//     console.log("Monday");
+//     break;
+//   case 2:
+//     console.log("Tuesday");
+//     break;
+//   case 3:
+//     console.log("Wednesday");
+//     break;
+//   default:
+//     console.log("Invalid day");
+// }
+
+let soz = "50";
+let num = 50;
+let result1 = soz + num;
+console.log(result1);
+let result2 = num + 50;
+console.log(result2);
+console.log(typeof soz);
+console.log(typeof num);
+
+let x = "100";
+console.log(Number(x));
+console.log(String(7));
+console.log(Boolean(0));
+
+let value = "123abc";
+console.log(Number(value));
+
+// document.addEventListener("keydown", show);
+// function show(event) {
+//   console.log(event.key);
+// }
+
+const input = document.createElement("input");
+document.body.appendChild(input);
+const text = document.createElement("p");
+document.body.appendChild(text);
+input.addEventListener("keyup", show);
+document.addEventListener("keydown", show);
+function show(e) {
+  text.textContent = input.value;
+  console.log(e.target.value);
+}
+
+document.addEventListener("keydown", run);
+function run(e) {
+  if (e.key === "Enter") {
+    console.log("message sent");
   }
 }
-console.log(isPerfectNumber(6));
+
+document.addEventListener("keydown", reng);
+function reng(e) {
+  if (e.key.toLowerCase() === "a") {
+    document.body.style.backgroundColor = "yellow";
+  }
+}
+document.addEventListener("keydown", yaz);
+function yaz(e) {
+  if (e.key === "ArrowUp") {
+    console.log("Up");
+  }
+}
