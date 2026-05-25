@@ -14,9 +14,10 @@ formSubmit.addEventListener("submit", (e) => {
     adTodoToStorage(todoText);
   }
 });
+let todos = [];
 document.addEventListener("DOMContentLoaded", pageLoad);
 function pageLoad(params) {
-  let todos = getTodosFromStorage();
+  getTodosFromStorage();
   todos.forEach(function (todo) {
     adTodoToUi(todo);
   });
@@ -58,7 +59,7 @@ function removeTodoFromStorage(removedTodo) {
 }
 
 function adTodoToStorage(newTodo) {
-  let todos = getTodosFromStorage();
+  getTodosFromStorage();
   todos.push(newTodo);
   localStorage.setItem("todos", JSON.stringify(todos));
 }
@@ -81,7 +82,7 @@ function searchTodoFunction(e) {
       const todoText = item.textContent.toLowerCase().trim();
 
       if (todoText.includes(searchValue)) {
-        item.setAttribute("style", "display:block");
+        item.setAttribute("style", "display:flex");
       } else {
         item.setAttribute("style", "display:none");
       }
