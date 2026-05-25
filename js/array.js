@@ -19,5 +19,3 @@ function writeGames(games){
 }
 getNames(games)
 writeGames(filteredGames)
-
-writeGames(filteredGames)
