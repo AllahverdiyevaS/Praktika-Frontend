@@ -123,161 +123,104 @@
 // }
 // console.log(isPerfectNumber(6));
 
-// const button=document.createElement('button');
-// button.innerText="Random Button"
-// document.body.appendChild(button);
-// button.addEventListener("click",function () {
-//   const randomNumber=Math.random();
-//   const paragraph=document.createElement('p');
-//   paragraph.innerText=randomNumber;
-//   document.body.appendChild(paragraph);
-//   localStorage.setItem("randomNumber",randomNumber);
-// localStorage.getItem("randomNumber");
-// })
-// const buttonClear=document.createElement('button');
-// buttonClear.innerText="Clear Storage";
-// document.body.appendChild(buttonClear);
+// ----------------------------
 
-// 17.05.2026----------------------------
-// const array = [];
-// for (let index = 0; index < 10; index++) {
-//   const randomNumber = Math.floor(Math.random() * 100) + 1;
-//   array.push(randomNumber);
+const age = 25;
+function checkVariable() {
+  const name = "Ali";
+}
+
+console.log(name);
+console.log(age);
+isHealthy = true;
+// if (age > 18) {
+//   let isConditionTrue = true;
+// }
+// console.log(isConditionTrue);
+
+if (age > 18) {
+  var isConditionTrue = true;
+}
+console.log(isConditionTrue);
+
+// let gun = "Bazar ertesi";
+// switch (gun) {
+//   case "Bazar ertesi":
+//     console.log("bugun bazra ertesi");
+//     break;
+//   case "Çərşənbə":
+//     console.log("bugun çərşənbə");
+//     break;
+//   case "Cumə":
+//     console.log("bugun cumə");
+//     break;
+//   default:
+//     console.log("bu gun bazar ertesi, çərşənbə ve ya cumə deyil");
+// }
+// let daxiEdilenGun = Number(prompt("gun daxil edin "));
+// switch (daxiEdilenGun) {
+//   case 1:
+//     console.log("Monday");
+//     break;
+//   case 2:
+//     console.log("Tuesday");
+//     break;
+//   case 3:
+//     console.log("Wednesday");
+//     break;
+//   default:
+//     console.log("Invalid day");
 // }
 
-// const maxNumber = Math.max(...array);
-// console.log("max number:", maxNumber);
-// console.log(array);
+let soz = "50";
+let num = 50;
+let result1 = soz + num;
+console.log(result1);
+let result2 = num + 50;
+console.log(result2);
+console.log(typeof soz);
+console.log(typeof num);
 
-// let cutEdedler = [];
-// while (cutEdedler.length < 15) {
-//   const randomNumber = Math.floor(Math.random() * 50) + 1;
-//   if (randomNumber % 2 === 0) {
-//     cutEdedler.push(randomNumber);
-//   }
-// }
-// console.log(cutEdedler);
+let x = "100";
+console.log(Number(x));
+console.log(String(7));
+console.log(Boolean(0));
 
-// let sum = 0;
-// let array = [];
+let value = "123abc";
+console.log(Number(value));
 
-// for (let index = 0; index <= 20; index++) {
-//   const randomNumber = Math.floor(Math.random() * 100) + 1;
-//   array.push(randomNumber);
-//   sum += randomNumber;
-// }
-// console.log(sum);
-
-// console.log(array);
-// let array = [];
-// for (let index = 0; index <= 10; index++) {
-//   const randomNumber = Math.floor(Math.random() * 100) + 1;
-//   if (randomNumber > 10) {
-//     array.push(randomNumber);
-//   }
-// }
-// console.log(array);
-
-// let array = [];
-// for (let index = 0; index < 10; index++) {
-//   const randomNumber = Math.floor(Math.random() * 100) + 1;
-//   array.push(randomNumber);
-// }
-// let minNumber = Math.min(...array);
-// console.log("min number:", minNumber);
-// console.log(array);
-// let array = [];
-// for (let index = 0; index <= 10; index++) {
-//   const randomNumber = Math.floor(Math.random() * 30) + 1;
-//   if (randomNumber % 3 === 0) {
-//     array.push(randomNumber);
-//   }
-// }
-// console.log(array);
-
-// let array = [];
-// for (let index = 0; index < 15; index++) {
-//   const randomNumber = Math.floor(Math.random() * 100) + 1;
-//   array.push(randomNumber);
-// }
-// console.log(array);
-// let count = 0;
-// for (let i = 0; i < array.length; i++) {
-//   if (array[i] % 2 !== 0) {
-//     count++;
-//   }
-// }
-// console.log("Tək ədədlərin sayı:", count);
-
-// let array = [];
-// for (let index = 0; index < 10; index++) {
-//   const randomNumber = Math.floor(Math.random() * 100) + 1;
-//   array.push(randomNumber * 2);
-// }
-// console.log(array);
-
-// let array = [];
-// for (let index = 0; index < 10; index++) {
-//   const randomNumber = Math.floor(Math.random() * 100) + 1;
-//   array.push(randomNumber);
-// }
-// console.log(array);
-// const reversedArray = array.reverse();
-
-// console.log(reversedArray);
-// const soz = "javascript";
-// const arraySoz = soz.split("");
-// for (let index = 0; index < arraySoz.length; index++) {
-//   const element = arraySoz[index];
-//   console.log(element);
+// document.addEventListener("keydown", show);
+// function show(event) {
+//   console.log(event.key);
 // }
 
-// const soz = "javascript";
-// const tersineSoz = soz.split("").reverse().join("");
-// console.log(tersineSoz);
+const input = document.createElement("input");
+document.body.appendChild(input);
+const text = document.createElement("p");
+document.body.appendChild(text);
+input.addEventListener("keyup", show);
+document.addEventListener("keydown", show);
+function show(e) {
+  text.textContent = input.value;
+  console.log(e.target.value);
+}
 
-// const today = new Date();
-// const day = today.getDate();
-// const month = today.getMonth() + 1;
-// const year = today.getFullYear();
-// console.log(day);
-// console.log(month);
-// console.log(year);
-// const tarix1 = new Date("2023-05-17");
-// const tarix2 = new Date("2023-06-17");
-// const todaysDate = new Date();
-// let yenTarix;
-// if (todaysDate - tarix1 < todaysDate - tarix2) {
-//   yenTarix = tarix1;
-// } else {
-//   yenTarix = tarix2;
-// }
-// console.log(yenTarix);
-
-// let array = [];
-// for (let index = 0; index < 10; index++) {
-//   const randomNumber = Math.floor(Math.random() * 10) + 1;
-
-//   array.push(randomNumber);
-// }
-// console.log(array);
-// let newArray = [];
-// for (let index = 0; index < array.length; index++) {
-//   if (array[index] > 5) {
-//     newArray.push(array[index]);
-//   }
-// }
-// console.log(newArray);
-
-const sozHello = "hello world";
-let herfSayi = 0;
-let bosluqSayi = 0;
-for (let index = 0; index < sozHello.length; index++) {
-  if (sozHello[index] === " ") {
-    bosluqSayi++;
-  } else {
-    herfSayi++;
+document.addEventListener("keydown", run);
+function run(e) {
+  if (e.key === "Enter") {
+    console.log("message sent");
   }
 }
-console.log("Hərf sayı:", herfSayi);
-console.log("Boşluq sayı:", bosluqSayi);
+
+document.addEventListener("keydown", reng);
+function reng(e) {
+  if (e.key.toLowerCase() === "a") {
+    document.body.style.backgroundColor = "yellow";
+  }
+}
+document.addEventListener("keydown", yaz);
+function yaz(e) {
+  if (e.key === "ArrowUp") {
+    console.log("Up");
+  }
+}
