@@ -125,23 +125,23 @@
 
 // ----------------------------
 
-const age = 25;
-function checkVariable() {
-  const name = "Ali";
-}
+// const age = 25;
+// function checkVariable() {
+//   const name = "Ali";
+// }
 
-console.log(name);
-console.log(age);
-isHealthy = true;
+// console.log(name);
+// console.log(age);
+// isHealthy = true;
 // if (age > 18) {
 //   let isConditionTrue = true;
 // }
 // console.log(isConditionTrue);
 
-if (age > 18) {
-  var isConditionTrue = true;
-}
-console.log(isConditionTrue);
+// if (age > 18) {
+//   var isConditionTrue = true;
+// }
+// console.log(isConditionTrue);
 
 // let gun = "Bazar ertesi";
 // switch (gun) {
@@ -172,55 +172,99 @@ console.log(isConditionTrue);
 //     console.log("Invalid day");
 // }
 
-let soz = "50";
-let num = 50;
-let result1 = soz + num;
-console.log(result1);
-let result2 = num + 50;
-console.log(result2);
-console.log(typeof soz);
-console.log(typeof num);
+// let soz = "50";
+// let num = 50;
+// let result1 = soz + num;
+// console.log(result1);
+// let result2 = num + 50;
+// console.log(result2);
+// console.log(typeof soz);
+// console.log(typeof num);
 
-let x = "100";
-console.log(Number(x));
-console.log(String(7));
-console.log(Boolean(0));
+// let x = "100";
+// console.log(Number(x));
+// console.log(String(7));
+// console.log(Boolean(0));
 
-let value = "123abc";
-console.log(Number(value));
+// let value = "123abc";
+// console.log(Number(value));
 
 // document.addEventListener("keydown", show);
 // function show(event) {
 //   console.log(event.key);
 // }
 
-const input = document.createElement("input");
-document.body.appendChild(input);
-const text = document.createElement("p");
-document.body.appendChild(text);
-input.addEventListener("keyup", show);
-document.addEventListener("keydown", show);
-function show(e) {
-  text.textContent = input.value;
-  console.log(e.target.value);
-}
+// const input = document.createElement("input");
+// document.body.appendChild(input);
+// const text = document.createElement("p");
+// document.body.appendChild(text);
+// input.addEventListener("keyup", show);
+// document.addEventListener("keydown", show);
+// function show(e) {
+//   text.textContent = input.value;
+//   console.log(e.target.value);
+// }
 
-document.addEventListener("keydown", run);
-function run(e) {
-  if (e.key === "Enter") {
-    console.log("message sent");
-  }
-}
+// document.addEventListener("keydown", run);
+// function run(e) {
+//   if (e.key === "Enter") {
+//     console.log("message sent");
+//   }
+// }
 
-document.addEventListener("keydown", reng);
-function reng(e) {
-  if (e.key.toLowerCase() === "a") {
-    document.body.style.backgroundColor = "yellow";
+// document.addEventListener("keydown", reng);
+// function reng(e) {
+//   if (e.key.toLowerCase() === "a") {
+//     document.body.style.backgroundColor = "yellow";
+//   }
+// }
+// document.addEventListener("keydown", yaz);
+// function yaz(e) {
+//   if (e.key === "ArrowUp") {
+//     console.log("Up");
+//   }
+// }
+// -------------------------------
+// function add_number(a, b) {
+//   return a + b;
+// }
+// const add_number = (a, b) => a + b;
+const isNumberEven = (number) =>
+  number % 2 === 0 ? log("even") : console.log("odd");
+console.log(isNumberEven(5));
+
+const arrayNumbers = [1, 2, 3, 4, 5, 6, 7];
+const arraysNumbers = () => {
+  arrayNumbers.forEach((number) => console.log(number));
+};
+console.log(arraysNumbers());
+
+const word = "Hello World";
+const stringLenght = (word) => word.length;
+console.log(stringLenght(word));
+
+const isNumberLarge = (a, b, c) => {
+  if (a > b && a > c) {
+    return a;
+  } else if (b > a && b > c) {
+    return b;
+  } else {
+    return c;
   }
-}
-document.addEventListener("keydown", yaz);
-function yaz(e) {
-  if (e.key === "ArrowUp") {
-    console.log("Up");
+};
+console.log(isNumberLarge(5, 10, 3));
+const arrayLoop = () => {
+  for (let i = 0; i <= 10; i++) {
+    console.log(i);
   }
-}
+};
+console.log(arrayLoop());
+
+// const yourAge = Number(prompt("Yasinizi daxil edin"));
+// const checkAge = (yourAge) =>
+//   yourAge >= 18 ? console.log("Acces granted") : console.log("Accces denied");
+// console.log(checkAge(yourAge));
+
+const arrayNumberSum = () =>
+  arrayNumbers.reduce((acc, number) => acc + number, 0);
+console.log(arrayNumberSum());

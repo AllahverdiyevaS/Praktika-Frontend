@@ -18,7 +18,7 @@
 //   const name = "This is global Scope";
 //   console.log(name)
 // }
-debugger
+'debugger'
 
 // let amount=1000;
 // let newLine="\r\n";
@@ -40,8 +40,54 @@ debugger
 //     default: alert("1 ile 4 arasi bir secim edin ");
 //         break;
 // }
-for (let i = 1; i <= 10; i++) {
-   for (let j = 1; j <= 10; j++) {
-       console.log(i+"x"+j+"="+(i*j) );
-   }
+        // <div class="main_container">
+        //         <h1>6 + Examples of the Best Email Landing Page</h1>
+        //         <p>
+        //             Landingfolio features the best Mail Landing Page designs on the web.
+        //             Browse more than 6 Email Landing Page examples, curated by us to
+        //             ensure the highest quality.
+            //   <span>
+        //          span text
+        //         </span>
+        //         </p>
+        //         <button>See More</button>
+                {/* </div> */}
+
+// let mainContainer=document.createElement('div');
+// let heading=document.createElement('h1');
+// let paragraph=document.createElement('p');
+// let button=document.createElement('button');
+// let span=document.createElement('span');
+
+// mainContainer.className='main_container';
+// heading.textContent='6 + Examples of the Best Email Landing Page';
+// paragraph.textContent='Landingfolio features the best Mail Landing Page designs on the web. Browse more than 6 Email Landing Page examples, curated by us to ensure the highest quality.';
+// span.textContent='span text';
+// button.textContent='See More';
+// mainContainer.appendChild(heading);
+// mainContainer.appendChild(paragraph);
+// paragraph.appendChild(span);
+// mainContainer.appendChild(button);
+// document.body.appendChild(mainContainer);
+const container = document.createElement('div');
+
+
+const button = document.createElement('button');
+const buttonText=button.innerText = 'Loading';
+
+
+container.appendChild(button);
+document.body.appendChild(container);
+function changeText() {
+    const buttonChabged = document.createElement('button');
+    buttonChabged.innerText = 'Completed';
+    container.replaceChild(buttonChabged, button);
 }
+button.addEventListener('click', changeText);
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "F5") {
+        event.preventDefault(); 
+
+        
+    }});
