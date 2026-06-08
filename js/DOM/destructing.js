@@ -51,3 +51,25 @@ for (const value of array) {
   sum += value;
 }
 console.log(sum);
+
+const numbers = [1, 2, 3, 4, 5];
+const newNumbers = numbers.map((number) => number + 5);
+console.log(newNumbers);
+
+class Student {
+  constructor(name, course) {
+    this.name = name;
+    this.course = course;
+  }
+  showInfo() {
+    console.log(`Telebe ${this.name} ${this.course} kursundadi`);
+  }
+}
+const telebe1 = new Student("Shafayat", "Frontend Developer");
+telebe1.showInfo();
+telebe1.showInfo();
+
+class Company {
+  static companyName = "Windows";
+}
+console.log(Company.companyName);
