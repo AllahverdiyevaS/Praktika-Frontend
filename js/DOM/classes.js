@@ -153,21 +153,195 @@
 
 // const valuesCar1 = Object.values(car1);
 // console.log(valuesCar1);
-class Employeer {
-  constructor(name, salary) {
-    this.name = name;
-    this.salary = salary;
+
+// -------------------------------------------
+
+// this,Inheritance,super
+
+// class User {
+//   constructor(name) {
+//     this.name = name;
+//   }
+
+//   writeName() {
+//     console.log(this.name);
+//   }
+// }
+// const user1 = new User("Ali");
+// user1.writeName();
+
+// class Car {
+//   constructor(brand, model) {
+//     this.brand = brand;
+//     this.model = model;
+//   }
+//   showInfo() {
+//     console.log(`Brand:${this.brand}, Model:${this.model}`);
+//   }
+// }
+// const car1 = new Car("Toyota", "toyota");
+// car1.showInfo();
+
+class BankAccount {
+  constructor(balance) {
+    this.balance = balance;
+  }
+  showBalance() {
+    console.log(`Sizin balansiniz: ${this.balance} AZN`);
   }
 }
-class Developer extends Employeer {
-  constructor(name, salary, languages) {
-    super(name, salary);
-    this.languages = languages;
+const account1 = new BankAccount(700);
+account1.showBalance();
+
+class Product {
+  constructor(title, price) {
+    this.title = title;
+    this.price = price;
+  }
+  updatePrice(newPrice) {
+    this.price = newPrice;
+    console.log(` ${this.title} ücun yeni qiymeti : ${this.price} AZN`);
+  }
+}
+const product1 = new Product("Süd", 5);
+product1.updatePrice(7);
+
+// class Person {
+//   constructor(firstName, lastName) {
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//   }
+// }
+// class Student extends Person {
+//   constructor(firstName, lastName) {
+//     super(firstName, lastName);
+//   }
+//   write() {
+//     console.log(this.firstName, this.lastName);
+//   }
+// }
+// const student1 = new Student("Ali", "Aliyev");
+// student1.write();
+
+class Animal {
+  constructor(age, color) {
+    this.age = age;
+    this.color = color;
+  }
+  showColor() {
+    console.log(` Men ${this.color} rengdeyem`);
+  }
+}
+class Dog extends Animal {
+  constructor(name, age, color) {
+    super(age, color);
+    this.name = name;
+  }
+  showInfo() {
+    console.log(`Adi:${this.name}, Yashi: ${this.age}, Rengi: ${this.color}`);
+  }
+}
+const dog1 = new Dog("Dog1", 5, "grey");
+dog1.showInfo();
+
+class Vehicle {
+  constructor(brand, model, year) {
+    this.brand = brand;
+    this.model = model;
+    this.year = year;
+  }
+  showInfo() {
+    console.log(this.brand, this.model, this.year);
+  }
+}
+class Car extends Vehicle {
+  constructor(brand, model, year) {
+    super(brand, model, year);
   }
   write() {
-    console.log(`${this.name} ${this.languages}de kod yazir`);
+    console.log("Mashin haqqda melumat:");
+    super.showInfo();
   }
 }
-const developer1 = new Developer("Ali", 5000, "JavaScript");
-console.log(developer1);
-developer1.write();
+const car1 = new Car("Toyota", "toyota", 2025);
+car1.write();
+
+class Employeer {
+  constructor(firstName, lastName, salary) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.salary = salary;
+  }
+  showInfo() {
+    console.log(this.firstName, this.lastName, this.salary);
+  }
+}
+class Manager extends Employeer {
+  constructor(firstName, lastName, salary) {
+    super(firstName, lastName, salary);
+  }
+  showInfoForManager() {
+    super.showInfo();
+    console.log("Men Manager  isleyirem ");
+  }
+}
+const manager1 = new Manager("Orkhan", "Aliyev", 5000);
+manager1.showInfoForManager();
+const correctPassworrd = "12345";
+class User {
+  constructor(firstName, lastName, age) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+  }
+  login(password) {
+    password !== correctPassworrd
+      ? console.log("password yalnisdi")
+      : console.log("xos gelmisiz");
+  }
+}
+class Admin extends User {
+  constructor(firstName, lastName, age) {
+    super(firstName, lastName, age);
+  }
+  adminLogin() {
+    super.login("12345");
+    console.log("salam");
+  }
+}
+const admin1 = new Admin("Orkhan", "Aliyev", 38);
+admin1.adminLogin();
+
+class Cat extends Animal {
+  constructor(age, color) {
+    super(age, color);
+  }
+  say() {
+    console.log("men pisiyem");
+    super.showColor();
+  }
+}
+const cat1 = new Cat(5, "ag");
+cat1.say();
+
+class Person {
+  constructor(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+  introduce() {
+    console.log(`Salam men ${this.firstName} ${this.lastName}`);
+  }
+}
+class Student extends Person {
+  constructor(firstName, lastName, group) {
+    super(firstName, lastName);
+    this.group = group;
+  }
+  write() {
+    super.introduce();
+    console.log(`men ${this.group} qrupda oxuyuram`);
+  }
+}
+const student1 = new Student("Ali", "Aliyev", "EFI125A");
+student1.write();
