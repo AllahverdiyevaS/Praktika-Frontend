@@ -8,12 +8,14 @@ class BonusBase {
   }
   hesabla() {
     let total = 0;
-    if (checkProducts()) {
+    if (this.checkProducts(this.products)) {
       if (this.hasKart) {
         this.products.forEach((product) => {
           total += (product.price * (100 - this.discount)) / 100;
         });
       }
+    } else {
+      this.products.forEach((product) => (total += product.price));
     }
     return total;
   }
@@ -25,3 +27,5 @@ class BonusBase {
     }
   }
 }
+const test1 = new BonusBase();
+test1.hesabla();
