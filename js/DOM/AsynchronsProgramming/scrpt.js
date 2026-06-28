@@ -4,10 +4,10 @@ console.log("Melumat tesdiqlendi");
 console.log("Proqram bitdi");
 
 function hesabla(qiymet1, qiymet2) {
-  const netice = (qiymet1 + qiymet2) / 2;
-  console.log(netice);
+  return (qiymet1 + qiymet2) / 2;
 }
 const result = hesabla(70, 50);
+console.log(result);
 
 function alisVeris() {
   console.log("Mehsulu sec");
