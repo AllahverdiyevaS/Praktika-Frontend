@@ -1,0 +1,6 @@
+.image_list {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem;
+  flex-wrap: wrap;
+}
