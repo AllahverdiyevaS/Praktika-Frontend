@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="main">
+        <div class="header">
+          <h4>CURRENCY RATES</h4>
+        </div>
+
+        <div class="content-container">
+          <input type="number" id="amount" placeholder="Amount" />
+          <select id="first_currency">
+            <option selected>USD</option>
+            <option>CAD</option>
+            <option>PLN</option>
+            <option selected>EUR</option>
+          </select>
+
+          <select id="second_currency">
+            <option>USD</option>
+            <option>CAD</option>
+            <option>PLN</option>
+            <option selected>EUR</option>
+          </select>
+
+          <input type="number" id="result" readonly placeholder="Result" />
+        </div>
+      </div>
+    </div>
+    <script src="./currency.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
