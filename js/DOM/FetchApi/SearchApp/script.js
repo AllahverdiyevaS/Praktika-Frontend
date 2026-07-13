@@ -7,7 +7,8 @@ const imageList = document.querySelector(".image_list");
 const clearButton = document.querySelector(".clear_button");
 const host = "https://api.unsplash.com";
 const path = "/search/photos";
-
+form.addEventListener("submit", serach);
+clearButton.addEventListener("click", clear);
 function serach(e) {
   const query = searchInput.value.trim();
   fetch(`${host}${path}?query=${query}`, {
@@ -38,4 +39,8 @@ function addImages(imgUrl) {
   img.width = "250";
   card.append(img);
   imageList.append(card);
+}
+function clear(params) {
+  searchInput.value = "";
+  imageList.innerHTML = "";
 }
