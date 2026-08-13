@@ -58,70 +58,116 @@
 
 // --------------------------------------
 
-const number = 7;
-if (number % 2 === 0) {
-  console.log(" number is even");
-} else {
-  console.log("number is odd");
+// const number = 7;
+// if (number % 2 === 0) {
+//   console.log(" number is even");
+// } else {
+//   console.log("number is odd");
+// }
+// const score = 71;
+
+// if (score >= 90) {
+//   console.log("Grade: A");
+// } else if (score < 90 && score >= 70) {
+//   console.log("Grade: B");
+// } else if (score < 70 && score >= 50) {
+//   console.log("Grade: C");
+// } else {
+//   console.log("Grade: D");
+// }
+
+// const hasTicket = false;
+// const age = 37;
+// if (age > 18 && hasTicket) {
+//   console.log("giris icazeldii");
+// } else {
+//   if (age < 18) {
+//     console.log("yas 18 yasdan asagidi");
+//   } else if (!hasTicket) {
+//     console.log("bilet yoxdu");
+//   }
+//   console.log("giris icazeli deyil");
+// }
+// switch (new Date().getDay()) {
+//   case 1:
+//     console.log("Monday");
+
+//     break;
+//   case 2:
+//     console.log("Tuesday");
+
+//     break;
+//   case 3:
+//     console.log("Wednesday");
+
+//     break;
+//   case 4:
+//     console.log("Thursday");
+
+//     break;
+//   case 5:
+//     console.log("Friday");
+
+//     break;
+//   case 6:
+//     console.log("Saturday");
+//   case 7:
+//     console.log("Sunday");
+
+//     break;
+// }
+
+// const password = "1hdfjfdndff7";
+// if (password.length >= 10) {
+//   console.log("strong password");
+// } else if (password.length < 10 && password.length >= 6) {
+//   console.log("normal password");
+// } else {
+//   console.log("weak password");
+// }
+
+// -------------------------------
+
+// for (let index = 1; index <= 20; index++) {
+//   console.log(index);
+// }
+// for (let index = 1; index <= 30; index++) {
+//   if (index % 2 === 0) {
+//     console.log(index);
+//   }
+// }
+// for (let index = 1; index <= 30; index++) {
+//   if (index % 2 !== 0) {
+//     console.log(index);
+//   }
+// }
+// for (let index = 1; index <= 50; index++) {
+//   if (index % 3 == 0) {
+//     console.log(index);
+//   }
+// }
+// const string = prompt("Eded daxil edin");
+// const stringToNumber = Number(string);
+// const kvadrat = stringToNumber ** 2;
+// console.log(kvadrat);
+// const score = prompt("Balinizi daxil edin");
+// if (score >= 80) {
+//   console.log("Ela");
+// } else if (score < 80 && score >= 50) {
+//   console.log("Kecdiz");
+// } else {
+//   console.log("Kesildiz");
+// }
+// const number = Number(prompt("Eded daxil edin"));
+// if (number % 2 === 0) {
+//   console.log("eded cutdu");
+// } else {
+//   console.log("eded tekdir");
+// }
+
+const number = Number(prompt("Eded daxil edin"));
+sum = 0;
+for (let index = 0; index <= number; index++) {
+  sum += index;
 }
-const score = 71;
-
-if (score >= 90) {
-  console.log("Grade: A");
-} else if (score < 90 && score >= 70) {
-  console.log("Grade: B");
-} else if (score < 70 && score >= 50) {
-  console.log("Grade: C");
-} else {
-  console.log("Grade: D");
-}
-
-const hasTicket = false;
-const age = 37;
-if (age > 18 && hasTicket) {
-  console.log("giris icazeldii");
-} else {
-  if (age < 18) {
-    console.log("yas 18 yasdan asagidi");
-  } else if (!hasTicket) {
-    console.log("bilet yoxdu");
-  }
-  console.log("giris icazeli deyil");
-}
-switch (new Date().getDay()) {
-  case 1:
-    console.log("Monday");
-
-    break;
-  case 2:
-    console.log("Tuesday");
-
-    break;
-  case 3:
-    console.log("Wednesday");
-
-    break;
-  case 4:
-    console.log("Thursday");
-
-    break;
-  case 5:
-    console.log("Friday");
-
-    break;
-  case 6:
-    console.log("Saturday");
-  case 7:
-    console.log("Sunday");
-
-    break;
-}
-
-const password = "1hdfjfdndff7";
-if (password.length >= 10) {
-  console.log("strong password");
-} else if (password.length < 10 && password.length >= 6) {
-  console.log("normal password");
-} else {
-  console.log("weak password");
-}
+console.log(sum);
