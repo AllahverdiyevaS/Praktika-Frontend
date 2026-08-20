@@ -165,9 +165,84 @@
 //   console.log("eded tekdir");
 // }
 
-const number = Number(prompt("Eded daxil edin"));
-sum = 0;
-for (let index = 0; index <= number; index++) {
+// const number = Number(prompt("Eded daxil edin"));
+// sum = 0;
+// for (let index = 0; index <= number; index++) {
+//   sum += index;
+// }
+// console.log(sum);
+// --------------------------------------
+
+// for (let index = 1; index <= 100; index++) {
+//   if (index % 3 == 0) {
+//     continue;
+//   }
+//   if (index == 50) {
+//     break;
+//   }
+//   console.log(index);
+// }
+
+// let number = Number(prompt("Regem daxil edin"));
+// let sum = 0;
+// while (number !== 0) {
+//   sum += number;
+//   number = Number(prompt("Yeni regem daxil edin"));
+// }
+// console.log(sum);
+// const cutEdedler = [];
+// const tekEdeler = [];
+
+// for (let index = 1; index <= 50; index++) {
+//   if (index % 2 === 0) {
+//     cutEdedler.push(index);
+//   } else {
+//     tekEdeler.push(index);
+//   }
+// }
+// console.log("cut", cutEdedler);
+// console.log("tek", tekEdeler);
+
+// for (let index = 1; index <= 100; index++) {
+//   if (index % 5 == 0) {
+//     console.log(index);
+//   }
+// }
+// let trueNumber = 7;
+// let enterNumber;
+// while (true) {
+//   enterNumber = Number(prompt("1-10 eden daxil edin"));
+//   if (trueNumber === enterNumber) {
+//     console.log("Tebrikler");
+//   } else {
+//     console.log("sehv eddedi");
+//   }
+// }
+// for (let index = 1; index <= 100; index++) {
+//   if (index === 20) {
+//     break;
+//   }
+//   console.log(index);
+// }
+// for (let index = 1; index <= 30; index++) {
+//   if (index % 4 == 0) {
+//     continue;
+//   }
+//   console.log(index);
+// }
+// let enterText;
+// while (true) {
+//   enterText = prompt("enter text");
+//   if (enterText === "stop") {
+//     break;
+//   }
+//   console.log(enterTaxt);
+// }
+for (let index = 10; index >= 1; index--) {
+  console.log(index);
+}
+let sum = 0;
+for (let index = 1; index <= 100; index++) {
   sum += index;
 }
 console.log(sum);
